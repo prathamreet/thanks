@@ -9,13 +9,13 @@ const client = new Client({
   ],
 });
 
-let prefix = "t";
+let prefix = "ty";
 const reminders = new Map();
 let reminderCounter = 0;
 
 client.once("ready", () => {
   console.log("Ready!");
-  client.user.setActivity("reminders | !help", { type: ActivityType.Watching });
+  client.user.setActivity("reminders | tyhelp", { type: ActivityType.Watching });
 });
 
 client.on("messageCreate", async (message) => {
